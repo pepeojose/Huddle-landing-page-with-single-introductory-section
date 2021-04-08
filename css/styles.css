@@ -1,0 +1,127 @@
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+    --text: hsl(228, 45%, 44%);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+.body {
+    min-height: 100vh;
+    margin: 0;
+    background-image: url(../img/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -90px -50px;
+    background-color: var(--violet);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main-container {
+    padding: 3rem 1.5rem;
+}
+
+.header {
+    width: 50%;
+    padding-bottom: 5rem;
+}
+
+.section-text {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.section-text__paragraph {
+    font-size: 1.05rem;
+    margin-bottom: 3rem;
+}
+
+.register {
+    padding: .9rem 5rem;
+    background-color: #fff;
+    border-radius: 25px;
+    color: var(--text);
+    text-decoration: none;
+    font-size: .9rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    box-shadow: 0 4px 4px hsla(0, 0%, 0%, 0.3);
+}
+
+.social-media {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.social-media__icon {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    text-align: center;
+}
+
+@media screen and (min-width: 415px) {
+    .body {
+        display: flex;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    .body {
+        padding: 0;
+        background-image: url(../img/bg-desktop.svg);
+        background-position: 0px 0px;
+    }
+    .main-container {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .main {
+        display: flex;
+    }
+    .section-text {
+        width: 47%;
+        margin-left: 3rem;
+        text-align: left;
+    }
+    .title {
+        font-size: 2.5rem;
+    }
+    .register:hover {
+        background-color: var(--soft-magenta);
+        color: #fff;
+    }
+    .social-media {
+        width: 12%;
+        margin-left: auto;
+        margin-right: 0;
+        justify-content: space-between;
+    }
+    .social-media__icon:hover {
+        border-color: var(--soft-magenta);
+        color: var(--soft-magenta);
+    }
+}
