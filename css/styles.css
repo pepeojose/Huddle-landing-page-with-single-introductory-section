@@ -17,8 +17,8 @@ img {
     margin: 0;
     background-image: url(../img/bg-mobile.svg);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: -90px -50px;
+    background-size: 110%;
+    background-position: top center;
     background-color: var(--violet);
     font-family: 'Open Sans', sans-serif;
 }
@@ -29,7 +29,12 @@ img {
 
 .header {
     width: 50%;
-    padding-bottom: 5rem;
+    padding-bottom: 4.5rem;
+}
+
+.section-image {
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .section-text {
@@ -39,8 +44,9 @@ img {
 }
 
 .title {
+    margin-top: 5rem;
     font-family: 'Poppins', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 700;
 }
 
@@ -93,11 +99,15 @@ img {
     .body {
         padding: 0;
         background-image: url(../img/bg-desktop.svg);
-        background-position: 0px 0px;
+        background-size: cover;
+        background-position: center center;
     }
     .main-container {
-        padding-left: 3rem;
-        padding-right: 3rem;
+        max-width: 1290px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
     }
     .main {
         display: flex;
